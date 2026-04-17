@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<!-- Aqui começa o meu documento HTML. Defino a linguagem como Português do Brasil -->
+<html lang="pt-BR">
+
+<head>
+    <!-- Metadados básicos para aceitar acentos e funcionar bem em celulares -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Portfólio</title>
+
+    <!-- Aqui eu conecto o meu arquivo de estilos (CSS) -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Importando a fonte "Inter" do Google Fonts para ficar mais moderno -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- O cabeçalho onde fica o nome do site e o menu -->
+    <header>
+        <nav>
+            <div class="logo">Meu Portfólio</div>
+            <ul class="nav-links">
+                <!-- Links de âncora que levam para partes da mesma página -->
+                <li><a href="#sobre">Sobre Mim</a></li>
+                <li><a href="#projetos">Meus Projetos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Seção "Sobre Mim": usei o ID para o link do menu funcionar -->
+        <section id="sobre" class="section">
+            <div class="container">
+                <h2>Sobre Mim</h2>
+                <div class="sobre-content">
+                    <!-- Minha foto de perfil que fica dentro de uma pasta -->
+                    <img src="img/image.png" alt="Foto de Perfil" class="perfil-img">
+                    <div class="sobre-texto">
+                        <p>Olá! Tenho 28 anos e sou apaixonada por tecnologia.</p>
+                        <p>Atualmente estou aprimorando minhas habilidades em desenvolvimento web (HTML, CSS e
+                            JavaScript), buscando sempre aprender novas tecnologias e criar interfaces intuitivas e
+                            dinâmicas.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção de Projetos: aqui os cards vão aparecer automaticamente pelo JS -->
+        <section id="projetos" class="section bg-light">
+            <div class="container">
+                <h2>Meus Projetos</h2>
+                <!-- O JavaScript vai procurar por esse ID para inserir os dados aqui dentro -->
+                <div id="projetos-container" class="projetos-grid">
+                    <!-- Os projetos serão renderizados aqui via JavaScript -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Rodapé simples com direitos autorais -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Meu Portfólio. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- No final de tudo, chamo o meu arquivo de lógica (JavaScript) -->
+    <script src="script.js"></script>
+</body>
+
+</html>
